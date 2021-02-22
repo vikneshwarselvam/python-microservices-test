@@ -3,7 +3,7 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'admin.settings')
 django.setup()
 from products.models import Product
 
-params = pika.URLParameters('amqps://khfjueiz:kLx-7wFYMv_34KphJGDqC00eV1fjh_AW@hornet.rmq.cloudamqp.com/khfjueiz')
+params = pika.URLParameters('YOUR_AMQP_URL')
 
 connection = pika.BlockingConnection(params)
 
